@@ -57,7 +57,7 @@ resource "aws_ecs_task_definition" "learn_ecs" {
   family                   = "learn-ecs"
   requires_compatibilities = ["FARGATE"]
   cpu                      = "512"
-  memory                   = "512"
+  memory                   = "1024"
   network_mode             = "awsvpc"
   container_definitions    = <<EOL
 [
