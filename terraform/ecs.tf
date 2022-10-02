@@ -56,7 +56,7 @@ resource "aws_ecs_service" "learn_ecs" {
 resource "aws_ecs_task_definition" "learn_ecs" {
   family                   = "learn-ecs"
   requires_compatibilities = ["FARGATE"]
-  cpu                      = "256"
+  cpu                      = "512"
   memory                   = "512"
   network_mode             = "awsvpc"
   container_definitions    = <<EOL
